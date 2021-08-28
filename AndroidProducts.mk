@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_guacamoleb.mk
     
     COMMON_LUNCH_CHOICES := \
-    lineage_honami-user \
-    lineage_honami-userdebug \
-    lineage_honami-eng
+    lineage_guacamoleb-user \
+    lineage_guacamoleb-userdebug \
+    lineage_guacamoleb-eng
