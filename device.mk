@@ -32,6 +32,7 @@ GAPPS_PRODUCT_PACKAGES += Youtube
 GAPPS_PRODUCT_PACKAGES += GoogleDialer
 GAPPS_PRODUCT_PACKAGES += Wallpapers
 GAPPS_EXCLUDED_PACKAGES += AndroidMigratePrebuilt
+GAPPS_EXCLUDED_PACKAGES += ActionsServices
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
 # A/B
