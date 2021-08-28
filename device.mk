@@ -26,6 +26,13 @@ DEVICE_PACKAGE_OVERLAYS += \
     
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+#GAPPS config
+GAPPS_VARIANT := pico
+GAPPS_PRODUCT_PACKAGES += Youtube
+GAPPS_PRODUCT_PACKAGES += GoogleDialer
+GAPPS_PRODUCT_PACKAGES += Wallpapers
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
