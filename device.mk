@@ -24,13 +24,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-aosp
     
- #GAPPS config
-GAPPS_VARIANT := pico
-GAPPS_PRODUCT_PACKAGES += Youtube
-GAPPS_PRODUCT_PACKAGES += GoogleDialer
-GAPPS_PRODUCT_PACKAGES += Wallpapers
-$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
-
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # A/B
