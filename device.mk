@@ -31,6 +31,7 @@ GAPPS_VARIANT := pico
 GAPPS_PRODUCT_PACKAGES += Youtube
 GAPPS_PRODUCT_PACKAGES += GoogleDialer
 GAPPS_PRODUCT_PACKAGES += Wallpapers
+GAPPS_PRODUCT_PACKAGES += Chrome
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
 # A/B
