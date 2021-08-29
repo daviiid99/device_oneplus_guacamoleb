@@ -8,8 +8,6 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),guacamoleb)
 include $(call all-makefiles-under,$(LOCAL_PATH))
-include $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
-
 include $(CLEAR_VARS)
 
 # A/B builds require us to create the mount points at compile time.
