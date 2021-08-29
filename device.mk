@@ -27,7 +27,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 #GAPPS config
-GAPPS_VARIANT := stock
+GAPPS_VARIANT := pico
 GAPPS_EXCLUDED_PACKAGES += AndroidMigratePrebuilt 
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
