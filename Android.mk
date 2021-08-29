@@ -8,13 +8,9 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),guacamoleb)
 include $(call all-makefiles-under,$(LOCAL_PATH))
+include $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
 include $(CLEAR_VARS)
-
-#GAPPS config
-GAPPS_VARIANT := pico
-GAPPS_EXCLUDED_PACKAGES += AndroidMigratePrebuilt 
-$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
 # A/B builds require us to create the mount points at compile time.
 # Just creating it for all cases since it does not hurt.
