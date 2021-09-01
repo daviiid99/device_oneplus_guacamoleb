@@ -401,12 +401,6 @@ PRODUCT_PACKAGES += \
     libOmxVidcCommon \
     libstagefrighthw
 
-# OnePlus
-PRODUCT_PACKAGES += \
-    oneplus-fwk.oneplus_msmnile
-
-PRODUCT_BOOT_JARS += \
-    oneplus-fwk.oneplus_msmnile
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.sys.oneplus.support=11.13.1
@@ -486,11 +480,7 @@ PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
-    qti_telephony_utils.xml \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+    qti_telephony_utils.xml 
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml
