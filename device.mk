@@ -15,6 +15,13 @@ $(call inherit-product, vendor/oneplus/guacamoleb/guacamoleb-vendor.mk)
 # Call oneplus firmware
 $(call inherit-product-if-exists, vendor/oneplus/firmware/Android.mk)
 
+#GAPPS config
+GAPPS_VARIANT := pico
+GAPPS_PRODUCT_PACKAGES += Youtube
+GAPPS_PRODUCT_PACKAGES += GoogleDialer
+GAPPS_PRODUCT_PACKAGES += Wallpapers
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -25,11 +32,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-aosp
     
 PRODUCT_ENFORCE_RRO_TARGETS := *
-
-#GAPPS config
-GAPPS_VARIANT := pico
-GAPPS_EXCLUDED_PACKAGES += AndroidMigratePrebuilt 
-$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
