@@ -46,7 +46,7 @@ patch -d frameworks/base -p1 < device/oneplus/guacamoleb/Disable_Wallpaper_Zoom.
 (Optional) LineageOS Updater app shorcut in drawer
 ```
 mkdir -p out/target/product/guacamoleb/system/product/priv-app
-cd out/target/product/j5nlte/system/product/priv-app
+cd out/target/product/guacamoleb/system/product/priv-app
 mkdir Up&& cd Up
 wget https://github.com/daviiid99/daviiid99/releases/download/honami/Up.apk
 cd ../../../../../../../../
