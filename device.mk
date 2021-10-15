@@ -15,12 +15,8 @@ $(call inherit-product, vendor/oneplus/guacamoleb/guacamoleb-vendor.mk)
 # Call oneplus firmware
 $(call inherit-product-if-exists, vendor/oneplus/firmware/Android.mk)
 
-#GAPPS config
-GAPPS_VARIANT := pico
-GAPPS_PRODUCT_PACKAGES += Youtube
-GAPPS_PRODUCT_PACKAGES += GoogleDialer
-GAPPS_PRODUCT_PACKAGES += Wallpapers
-$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+# VNDK
+PRODUCT_EXTRA_VNDK_VERSIONS := 28 29 30
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
