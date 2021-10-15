@@ -18,6 +18,14 @@ $(call inherit-product-if-exists, vendor/oneplus/firmware/Android.mk)
 # VNDK
 PRODUCT_EXTRA_VNDK_VERSIONS := 28 29 30
 
+# HIDL HALs
+$(call inherit-product, $(LOCAL_PATH)/hidl.mk)
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.0-impl \
+    android.hardware.keymaster@4.0-service
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
